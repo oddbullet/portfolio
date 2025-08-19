@@ -1,0 +1,72 @@
+:root {
+  --borderRadius: 4px;
+  --accent: #e0e0e2;
+}
+
+.image {
+  width: min(auto, 24rem);
+  /* height: 12rem; */
+  object-fit: contain;
+  border-radius: var(--borderRadius) 0 0 var(--borderRadius);
+}
+
+.projectContainer {
+  display: flex;
+  background-color: #101c3f;
+  border: 1px solid #ffffff1a;
+  border-radius: var(--borderRadius);
+  padding-right: 1rem;
+  gap: 1rem;
+}
+
+.projectMain {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tags {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.demoLink {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--accent);
+  border-radius: var(--borderRadius);
+  background-color: #0c101e;
+  padding: 0.2rem 0.3rem;
+  gap: 0.2rem;
+}
+
+.demoLink svg {
+  fill: var(--accent);
+}
+
+.githubLink {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  border-radius: var(--borderRadius);
+  background-color: #0582ca;
+  padding: 0.2rem 0.3rem;
+  gap: 0.2rem;
+}
+
+.botContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  gap: 0.3rem;
+}
