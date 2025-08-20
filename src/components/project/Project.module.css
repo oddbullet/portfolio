@@ -70,3 +70,23 @@
   display: flex;
   gap: 0.3rem;
 }
+
+@media screen and (max-width: 1000px) {
+  .projectContainer {
+    flex-direction: column;
+    width: 256px;
+  }
+
+  .botContent {
+    flex-direction: column;
+    margin-top: 0.5rem;
+  }
+
+  .tags {
+    flex-wrap: wrap;
+  }
+
+  .links {
+    margin: 0.5rem 0 0.5rem 0;
+  }
+}
