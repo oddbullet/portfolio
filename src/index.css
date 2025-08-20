@@ -64,6 +64,7 @@ p {
 
 .skill-display {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.4rem;
   margin: 0.3rem 0 0.3rem 0;
 }
@@ -88,4 +89,33 @@ p {
   flex-direction: column;
   margin-top: 0.5rem;
   gap: 1rem;
+}
+
+@media screen and (width <= 1000px) {
+  .main-content {
+    margin: 0;
+  }
+
+  .aboutSkill-section {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .project-section {
+    align-items: center;
+  }
+
+  .projects {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+  }
+}
+
+@media screen and (width <= 425px) {
+  .about {
+    width: 100%;
+  }
 }
