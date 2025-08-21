@@ -1,16 +1,20 @@
+import Footer from "../components/Footer";
 import {
   DailyLoggerProject,
   HabitProject,
+  Interpreter,
   MediaRecommenderProject,
   ZeldaCloneProject,
 } from "../components/project/Project";
 import {
   CSharp,
   ExpressTag,
+  FirebaseTag,
   GithubTag,
   JavaTag,
   JSTag,
   KotlinTag,
+  MongoDBTag,
   NodeJSTag,
   PythonTag,
   ReactTag,
@@ -84,6 +88,11 @@ export default function HomePage() {
               <ExpressTag />
               <NodeJSTag />
             </div>
+            <h2>Other</h2>
+            <div className="skill-display">
+              <FirebaseTag />
+              <MongoDBTag />
+            </div>
           </div>
         </div>
         <div className="project-section">
@@ -93,9 +102,11 @@ export default function HomePage() {
             <MediaRecommenderProject />
             <DailyLoggerProject />
             <ZeldaCloneProject />
+            <Interpreter />
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

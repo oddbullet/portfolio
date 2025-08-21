@@ -2,6 +2,7 @@ import style from "./Project.module.css";
 import HabitTodayImg from "../../assets/HabitToday.png";
 import fmdb from "../../assets/FMdb.png";
 import DailyLogImg from "../../assets/DailyLog.png";
+import InterpreterImg from "../../assets/Interpreter.png";
 import Zelda from "../../assets/Zelda.png";
 import {
   CSharp,
@@ -11,6 +12,7 @@ import {
   LinkTag,
   MongoDBTag,
   NodeJSTag,
+  PythonTag,
   ReactTag,
   ReduxTag,
 } from "../Tags";
@@ -168,6 +170,43 @@ export function ZeldaCloneProject() {
             <a
               className={style.githubLink}
               href="https://github.com/Team-Goober/GooberGame"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GithubAltTag /> Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function Interpreter() {
+  return (
+    <div className={style.projectContainer}>
+      <img
+        className={style.image}
+        src={InterpreterImg}
+        alt="Interpreter Logo"
+        width={256}
+      />
+      <div className={style.projectMain}>
+        <h2>Interpreter</h2>
+        <p>
+          💻 A school project on how an interpreter works. This project will
+          tokenize, parse, and execute a custom programming language.
+        </p>
+
+        <div className={style.botContent}>
+          <div className={style.tags}>
+            <PythonTag />
+          </div>
+
+          <div className={style.links}>
+            <a
+              className={style.githubLink}
+              href="https://github.com/oddbullet/Tokenizer"
               target="_blank"
               rel="noreferrer"
             >
