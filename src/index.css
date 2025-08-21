@@ -91,6 +91,14 @@ p {
   gap: 1rem;
 }
 
+.footer {
+  margin-top: 1rem;
+  padding: 0.2rem 0;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #ffffff1a;
+}
+
 @media screen and (width <= 1000px) {
   .main-content {
     margin: 0;
