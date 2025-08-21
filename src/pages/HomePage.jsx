@@ -1,8 +1,9 @@
 import Footer from "../components/Footer";
 import {
   DailyLoggerProject,
+  GamifyTodoListProject,
   HabitProject,
-  Interpreter,
+  InterpreterProject,
   MediaRecommenderProject,
   ZeldaCloneProject,
 } from "../components/project/Project";
@@ -102,7 +103,8 @@ export default function HomePage() {
             <MediaRecommenderProject />
             <DailyLoggerProject />
             <ZeldaCloneProject />
-            <Interpreter />
+            <InterpreterProject />
+            <GamifyTodoListProject />
           </div>
         </div>
       </div>
