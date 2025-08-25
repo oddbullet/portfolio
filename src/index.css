@@ -65,6 +65,7 @@ p {
 .skill-display {
   display: flex;
   flex-wrap: wrap;
+  width: 420px;
   gap: 0.4rem;
   margin: 0.3rem 0 0.3rem 0;
 }
