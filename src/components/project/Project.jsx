@@ -4,11 +4,13 @@ import fmdb from "../../assets/FMdb.png";
 import DailyLogImg from "../../assets/DailyLog.png";
 import InterpreterImg from "../../assets/Interpreter.png";
 import Zelda from "../../assets/Zelda.png";
+import gameTodo from "../../assets/gameTodo.png";
 import {
   CSharp,
   ExpressTag,
   FirebaseTag,
   GithubAltTag,
+  KotlinTag,
   LinkTag,
   MongoDBTag,
   NodeJSTag,
@@ -182,7 +184,7 @@ export function ZeldaCloneProject() {
   );
 }
 
-export function Interpreter() {
+export function InterpreterProject() {
   return (
     <div className={style.projectContainer}>
       <img
@@ -207,6 +209,43 @@ export function Interpreter() {
             <a
               className={style.githubLink}
               href="https://github.com/oddbullet/Tokenizer"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GithubAltTag /> Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function GamifyTodoListProject() {
+  return (
+    <div className={style.projectContainer}>
+      <img
+        className={style.image}
+        src={gameTodo}
+        alt="Interpreter Logo"
+        width={256}
+      />
+      <div className={style.projectMain}>
+        <h2>Gamified Todo List</h2>
+        <p>
+          🕹️ Gamification of a to-do list. Level up your character as you do
+          your tasks. Made with a team.
+        </p>
+
+        <div className={style.botContent}>
+          <div className={style.tags}>
+            <KotlinTag />
+          </div>
+
+          <div className={style.links}>
+            <a
+              className={style.githubLink}
+              href="https://github.com/MobileAppDevelopmentKYL/ProdApp"
               target="_blank"
               rel="noreferrer"
             >

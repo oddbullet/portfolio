@@ -1,8 +1,9 @@
 import Footer from "../components/Footer";
 import {
   DailyLoggerProject,
+  GamifyTodoListProject,
   HabitProject,
-  Interpreter,
+  InterpreterProject,
   MediaRecommenderProject,
   ZeldaCloneProject,
 } from "../components/project/Project";
@@ -19,6 +20,7 @@ import {
   PythonTag,
   ReactTag,
   ReduxTag,
+  SQLTag,
 } from "../components/Tags";
 
 export default function HomePage() {
@@ -77,6 +79,7 @@ export default function HomePage() {
               <KotlinTag />
               <CSharp />
               <JavaTag />
+              <SQLTag />
             </div>
             <h2>Frontend</h2>
             <div className="skill-display">
@@ -102,7 +105,8 @@ export default function HomePage() {
             <MediaRecommenderProject />
             <DailyLoggerProject />
             <ZeldaCloneProject />
-            <Interpreter />
+            <InterpreterProject />
+            <GamifyTodoListProject />
           </div>
         </div>
       </div>

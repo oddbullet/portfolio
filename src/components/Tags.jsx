@@ -161,3 +161,14 @@ export function ReduxTag() {
     </div>
   );
 }
+
+export function SQLTag() {
+  return (
+    <div
+      className="skill-tag"
+      style={{ color: "white", backgroundColor: "#3E6E93" }}
+    >
+      SQL
+    </div>
+  );
+}
