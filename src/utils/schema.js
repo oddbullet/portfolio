@@ -14,12 +14,12 @@ class Contacts {
 }
 
 class Project {
-  constructor(title, description, tags, links, feature) {
+  constructor(title, description, tags, links, featured) {
     this.title = title;
     this.description = description;
     this.tags = tags;
     this.links = links;
-    this.feature = feature;
+    this.featured = featured;
   }
 }
 

@@ -7,7 +7,7 @@ const projectConverter = {
       description: project.description,
       tags: project.tags,
       links: { demo: project.links.demo, github: project.links.github },
-      feature: project.feature,
+      featured: project.featured,
     };
   },
   fromFirestore: (snapshot, options) => {
@@ -17,7 +17,7 @@ const projectConverter = {
       data.description,
       data.tags,
       new Links(data.links.demo, data.links.github),
-      data.feature,
+      data.featured,
     );
   },
 };

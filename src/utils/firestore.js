@@ -32,8 +32,8 @@ async function get_all_projects() {
   return querySnapshot;
 }
 
-async function get_all_feature_projects() {
-  const q = query(projectsRef, where("feature", "==", true));
+async function get_all_featured_projects() {
+  const q = query(projectsRef, where("featured", "==", true));
   const querySnapshot = await getDocs(q);
   return querySnapshot;
 }
@@ -49,7 +49,7 @@ async function edit_project(id, project) {
     description: project.description,
     tags: project.tags,
     links: { demo: project.links.demo, github: project.links.github },
-    feature: project.feature,
+    featured: project.featured,
   });
 }
 
@@ -96,7 +96,7 @@ async function delete_experience(id) {
 
 export {
   get_all_projects,
-  get_all_feature_projects,
+  get_all_featured_projects,
   add_project,
   edit_project,
   delete_project,
