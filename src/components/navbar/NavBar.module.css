@@ -1,0 +1,21 @@
+nav {
+  display: flex;
+  position: fixed;
+  gap: 1em;
+  border: 1px solid #7c6ff71a;
+  border-radius: 100px;
+  padding: 6px 6px;
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  padding: 6px 17px;
+  border-radius: 100px;
+  font-weight: 500;
+}
+
+.activeNav {
+  background-color: #7c6ff7;
+  transition: 0.3s;
+}
