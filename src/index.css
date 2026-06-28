@@ -27,13 +27,20 @@ p {
   color: var(--accent);
 }
 
-.link-section {
+.nav-section {
   display: flex;
   margin-top: 2em;
   margin-bottom: 2em;
   gap: 0.5rem;
   justify-content: center;
   align-items: center;
+}
+
+.link-section {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
 
 .icon {
@@ -48,7 +55,7 @@ p {
 
 .main-content {
   max-width: 995px;
-  margin: 2rem auto 0 auto;
+  margin: 5rem auto 0 auto;
   display: flex;
   flex-direction: column;
   gap: 2rem;

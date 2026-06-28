@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import Footer from "../components/Footer";
 import { GithubIcon, LinkedinIcon } from "../components/LinkIcon";
 import { NavBar } from "../components/navbar/NavBar";
@@ -13,6 +14,7 @@ import {
   CSharp,
   ExpressTag,
   FirebaseTag,
+  GithubTag,
   JavaTag,
   JSTag,
   KotlinTag,
@@ -23,25 +25,44 @@ import {
   ReduxTag,
   SQLTag,
 } from "../components/Tags";
+import Typed from "typed.js";
 
 export default function HomePage() {
+  const el = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["<h1>Bill Yang</h1>"],
+      typeSpeed: 70,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <>
       <div className="main-content">
         <div className="aboutSkill-section">
           <div className="about">
-            <h1>About</h1>
-            <p>Hello! 👋</p>
+            <p>Hello! I'm</p>
+            <br></br>
+            <span ref={el}></span>
             <br></br>
             <p>
-              I'm Bill Yang an aspiring software engineer and currently focused
-              on full-stack web development using React.
+              an aspiring software engineer and currently focused on full-stack
+              web development using React.
             </p>
             <p>
               <br></br>
-              I’m always exploring new technologies and building side projects
+              I'm always exploring new technologies and building side projects
               to challenge myself.
             </p>
+            <div className="link-section">
+              <GithubIcon />
+              <LinkedinIcon />
+            </div>
           </div>
           <div className="skill-section">
             <h2>Core</h2>

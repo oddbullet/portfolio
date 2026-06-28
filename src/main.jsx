@@ -10,7 +10,7 @@ import { NavBar } from "./components/navbar/NavBar.jsx";
 function Layout() {
   return (
     <>
-      <div className="link-section">
+      <div className="nav-section">
         <NavBar />
       </div>
       <Outlet />
