@@ -1,0 +1,30 @@
+.navSection {
+  display: flex;
+  margin: 2em 0;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  gap: 1em;
+  border: 1px solid var(--nav-border);
+  border-radius: 100px;
+  padding: 6px;
+  background-color: var(--bg);
+}
+
+.nav a {
+  color: var(--accent);
+  text-decoration: none;
+  padding: 6px 17px;
+  border-radius: 100px;
+  font-weight: 500;
+}
+
+.activeNav {
+  background-color: var(--nav-accent);
+  transition: 0.3s;
+}
