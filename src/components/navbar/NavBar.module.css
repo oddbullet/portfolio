@@ -1,14 +1,22 @@
-nav {
+.navSection {
+  display: flex;
+  margin: 2em 0;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
   display: flex;
   position: fixed;
   gap: 1em;
-  border: 1px solid #7c6ff71a;
+  border: 1px solid var(--nav-border);
   border-radius: 100px;
-  padding: 6px 6px;
-  background-color: #0a0912;
+  padding: 6px;
+  background-color: var(--bg);
 }
 
-nav a {
+.nav a {
   color: var(--accent);
   text-decoration: none;
   padding: 6px 17px;
@@ -17,6 +25,6 @@ nav a {
 }
 
 .activeNav {
-  background-color: #7c6ff7;
+  background-color: var(--nav-accent);
   transition: 0.3s;
 }

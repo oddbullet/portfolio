@@ -1,0 +1,17 @@
+:root {
+  --accent: #e0e0e2;
+  --bg: #0a0912;
+  --surface: #101c3f;
+  --surface-alt: #0c101e;
+  --nav-accent: #7c6ff7;
+  --nav-border: #7c6ff71a;
+  --border: #ffffff1a;
+
+  --link-github-bg: #0582ca;
+
+  --icon-hover-github: #909692;
+  --icon-hover-linkedin: #0a66c2;
+
+  --radius: 4px;
+  --content-max: 995px;
+}

@@ -15,10 +15,12 @@ function CustomNavLink({ link, name }) {
 
 export function NavBar() {
   return (
-    <nav>
-      <CustomNavLink link="/" name={"Home"}></CustomNavLink>
-      <CustomNavLink link="/experience" name={"Experience"}></CustomNavLink>
-      <CustomNavLink link="/projects" name={"Projects"}></CustomNavLink>
-    </nav>
+    <div className={styles.navSection}>
+      <nav className={styles.nav}>
+        <CustomNavLink link="/" name="Home" />
+        <CustomNavLink link="/experience" name="Experience" />
+        <CustomNavLink link="/projects" name="Projects" />
+      </nav>
+    </div>
   );
 }

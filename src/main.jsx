@@ -1,22 +1,11 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router";
 import "./index.css";
 import App from "./App.jsx";
 import ExperiencePage from "./pages/ExperiencePage.jsx";
 import ProjectsPage from "./pages/Projects.jsx";
-import { BrowserRouter, Routes, Route, Outlet } from "react-router";
-import { NavBar } from "./components/navbar/NavBar.jsx";
-
-function Layout() {
-  return (
-    <>
-      <div className="nav-section">
-        <NavBar />
-      </div>
-      <Outlet />
-    </>
-  );
-}
+import Layout from "./components/Layout.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
